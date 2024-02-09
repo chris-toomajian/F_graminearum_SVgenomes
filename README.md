@@ -40,18 +40,25 @@ Most scripts were written to run on Kansas State University's high performance c
 
 canu23522.sh - script for running canu genome assembly software
 
+Insert script for calling npcor!
+
 23389_pilon.sbatch - script for short read polishing, including running bwa-mem and pilon software
 
-pilonBox.pl    /homes/upasanad/project/illumina_sequences/pilon_scripts/pilonBox.pl
+pilonBox.pl    /homes/upasanad/project/illumina_sequences/pilon_scripts/pilonBox.pl - This is a script of S Liu, but it doesn't appear at his GitHub
 
-busco.cml3066.sh - 
+busco.cml3066.sh - script for running BUSCO software
 
-23389.edta.sh
+23389.edta.sh - script for running EDTA software
 
-23468.syri.plot.sh
+minimap2.sh - script to run minimap to align query genome assembly against reference assembly (PH-1) isolate
 
-fisher_test.R
+syri.sh - script to run SyRI software
 
-rcircosnew.R
+23468.syri.plot.sh - script to make SyRI plot based on output of SyRI software
+
+rcircosnew.R - R code to generate RCircos plots
+
+fisher_test.R - R code to perform Fishers exact test from 2x2 contingency tables
+
 
 ## Usage
