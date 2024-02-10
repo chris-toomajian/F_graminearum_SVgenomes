@@ -60,7 +60,9 @@ pilonBox.pl    /homes/upasanad/project/illumina_sequences/pilon_scripts/pilonBox
 
 <ins>fisher_test.R</ins> - R code to perform Fishers exact test from 2x2 contingency tables
 
+## Funannotate tutorial
 
+See <ins>Funannotate_workflow.rst</ins> for the set of commands used to run Funannotate for genome annotation, in tutorial format.
 
 
 ## Usage
