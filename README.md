@@ -23,6 +23,7 @@ Most scripts were written to run on Kansas State University's high performance c
 - [SAMtools](https://github.com/samtools/samtools) 1.9-foss-2018b
 - [minimap2](https://github.com/lh3/minimap2)
 - [nanopolish](https://github.com/jts/nanopolish)
+- [GATK](https://github.com/broadinstitute/gatk) 4.1.0.0
 - [npcor](https://github.com/liu3zhenlab/npcor)
 - [BWA](https://github.com/lh3/bwa) 0.7.17-GCC-8.3.0
 - [pilon](https://github.com/broadinstitute/pilon) 1.24
@@ -40,11 +41,17 @@ Most scripts were written to run on Kansas State University's high performance c
 
 <ins>canu23522.sh</ins> - script for running canu genome assembly software
 
-Insert script for calling npcor!
+<ins>nanopolish_first.sh</ins> - First script in preparation for nanopolish - for indexing, performing read alignments and creating BAM file
+
+<ins>split.correct.sh</ins> - Second script in nanopolish process: splits genome into 50 kb pieces and runs nanopolish correction for each piece (uses npcor and nanopolish)
+
+<ins>3c-check_submerge.sh</ins> - Third script in nanopolish process: runs npcormerge from npcor.
+
+<ins>combined.sh</ins> - Fourth (and last) script in nanopolish process: Merges polished sequences back into assembled genome and merges VCF files
 
 <ins>pilon.sbatch</ins> - script for short read polishing, including running bwa-mem and pilon software
 
-pilonBox.pl    /homes/upasanad/project/illumina_sequences/pilon_scripts/pilonBox.pl - This is a script of S Liu, but it doesn't appear at his GitHub
+<ins>pilonBox.pl</ins> -  This is a pilon-related script from Dr. Sanzhen Liu (https://github.com/liu3zhenlab) which is called in pilon.batch, but it doesn't appear at his GitHub
 
 <ins>busco.cml3066.sh</ins> - script for running BUSCO software
 
@@ -64,5 +71,3 @@ pilonBox.pl    /homes/upasanad/project/illumina_sequences/pilon_scripts/pilonBox
 
 See <ins>Funannotate_workflow.rst</ins> for the set of commands used to run Funannotate for genome annotation, in tutorial format.
 
-
-## Usage
